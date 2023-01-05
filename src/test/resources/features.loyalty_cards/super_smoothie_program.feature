@@ -16,6 +16,6 @@ Feature: Super Smoothie Loyalty Card Program
     Examples:
 
       | Drink     | Quantity | Points |
-      | Banana    | 2        | 15     |
+      | Banana    | 2        | 30     |
       | Berry     | 1        | 20     |
       | Earl Grey | 3        | 30     |
