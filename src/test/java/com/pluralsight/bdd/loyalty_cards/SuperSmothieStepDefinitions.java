@@ -11,6 +11,7 @@ public class SuperSmothieStepDefinitions  {
 
     private DrinkCatalog drinkCatelog;
     private SuperSmothieSchema superSmothieSchema;
+    private MorningFreshnessMember michael;
     @Given("the following drink categories:")
     public void the_following_drink_categories(List<Map<String, String>> drinkCategory) {
         drinkCategory.stream().forEach(
@@ -28,8 +29,7 @@ public class SuperSmothieStepDefinitions  {
 
     @Given("^(.*) is a Morning Freshness Member$")
     public void michael_is_a_Morning_Freshness_Member(String name) {
-
-
+        michael = new MorningFreshnessMember(name);
     }
 
     @When("^(.*) purchases (\\d+) (.*) drinks?")
